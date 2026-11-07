@@ -1,0 +1,233 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: var(--font-cormorant), Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: var(--font-jakarta), system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+
+  /* Paleta Editorial Minimalista & Autoridade Clássica */
+  --color-sand-light: #FAF6F2;
+  --color-sand-warm: #F3ECE4;
+  --color-sand-border: #E5D9CD;
+
+  --color-charcoal: #1A1615;
+  --color-espresso: #3A1F18;
+  --color-espresso-muted: #5C3D34;
+
+  --color-burgundy: #582126;
+  --color-burgundy-dark: #41161A;
+  --color-burgundy-light: #722D33;
+
+  --color-terracotta: #C88A76;
+  --color-rose-soft: #DFB4A4;
+
+  --color-gold: #C5A059;
+  --color-gold-light: #E2C68D;
+  --color-gold-dark: #9D7B38;
+
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+:root {
+  color-scheme: light;
+  --bg-primary: #FAF6F2;
+  --bg-secondary: #F3ECE4;
+  --text-primary: #3A1F18;
+  --text-contrast: #1A1615;
+  --brand-burgundy: #582126;
+  --brand-terracotta: #C88A76;
+  --brand-rose: #DFB4A4;
+  --brand-gold: #C5A059;
+}
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: clip;
+  background-color: #FAF6F2;
+  color: #3A1F18;
+  -webkit-tap-highlight-color: transparent;
+  text-rendering: optimizeLegibility;
+}
+
+body {
+  background-color: #FAF6F2;
+  color: #3A1F18;
+  overflow-x: clip;
+  min-height: 100dvh;
+  selection-background-color: #582126;
+  selection-color: #FAF6F2;
+}
+
+::selection {
+  background-color: #582126;
+  color: #FAF6F2;
+}
+
+/* Custom Editorial Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FAF6F2;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C88A76;
+  border-radius: 9999px;
+  border: 2px solid #FAF6F2;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #582126;
+}
+
+/* GPU-Accelerated Keyframes */
+@keyframes shimmerSweep {
+  0% {
+    transform: translate3d(-120%, 0, 0) skewX(-18deg);
+  }
+  45%,
+  100% {
+    transform: translate3d(220%, 0, 0) skewX(-18deg);
+  }
+}
+
+@keyframes floatSubtle {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+  50% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+@keyframes pulseSoft {
+  0%,
+  100% {
+    opacity: 1;
+    transform: scale3d(1, 1, 1);
+  }
+  50% {
+    opacity: 0.55;
+    transform: scale3d(1.18, 1.18, 1);
+  }
+}
+
+@keyframes fadeUpReveal {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+/* Shimmer CTA Button (GPU-only transform + opacity) */
+.btn-shimmer {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  transition: transform 0.28s var(--ease-editorial), box-shadow 0.28s var(--ease-editorial), background-color 0.28s var(--ease-editorial);
+}
+
+.btn-shimmer::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 48%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(197, 160, 89, 0.34) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: translate3d(-120%, 0, 0) skewX(-18deg);
+  animation: shimmerSweep 4.8s infinite ease-in-out;
+  pointer-events: none;
+  will-change: transform;
+}
+
+.btn-shimmer:hover {
+  transform: translate3d(0, -1px, 0);
+}
+
+.btn-shimmer:active {
+  transform: translate3d(0, 0, 0) scale(0.99);
+}
+
+/* Glassmorphism Surfaces */
+.glass-nav {
+  background: rgba(250, 246, 242, 0.86);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.glass-dark {
+  background: rgba(26, 22, 21, 0.92);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+/* Editorial Organic Underline (from Instagram Posts) */
+.editorial-underline {
+  position: relative;
+  display: inline-block;
+}
+
+.editorial-underline::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0.06em;
+  width: 100%;
+  height: 0.14em;
+  background-color: #C88A76;
+  opacity: 0.72;
+  border-radius: 999px;
+  z-index: -1;
+}
+
+/* Editorial Thin Divider (1px solid #C88A76/40) */
+.editorial-divider {
+  border-color: rgba(200, 138, 118, 0.4);
+}
+
+/* Native Semantic <details> & <summary> Styling */
+details > summary {
+  list-style: none;
+}
+
+details > summary::-webkit-details-marker {
+  display: none;
+}
+
+details[open] > summary .faq-chevron {
+  transform: rotate(180deg);
+  background-color: #582126;
+  color: #FAF6F2;
+  border-color: #582126;
+}
+
+details[open] .faq-content {
+  animation: fadeUpReveal 0.28s var(--ease-editorial) forwards;
+}
+
+/* Reduced Motion Accessibility */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  .btn-shimmer::after {
+    animation: none;
+  }
+  details[open] .faq-content {
+    animation: none;
+  }
+}
+

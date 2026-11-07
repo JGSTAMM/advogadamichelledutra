@@ -1185,7 +1185,7 @@ export default function HomePage() {
                       className="object-cover object-[center_18%] scale-[1.12]"
                     />
                   </div>
-                  <div className="p-5 bg-[#FAF6F2] border-t border-[#C88A76]/35 flex items-center justify-between gap-3">
+                  <div className="p-5 bg-[#FAF6F2] border-t border-[#C88A76]/35 flex flex-wrap items-center justify-between gap-3">
                     <div>
                       <p className="font-serif text-xl font-semibold text-[#3A1F18]">
                         “Prazer, Michelle Dutra!”
@@ -1194,9 +1194,28 @@ export default function HomePage() {
                         OAB/RS 136.947 • Faculdade Dom Alberto (2021)
                       </p>
                     </div>
-                    <span className="px-3 py-1 rounded-full bg-[#582126]/10 text-[#582126] text-xs font-semibold">
-                      Desde 2021
-                    </span>
+                    <a
+                      href="https://www.instagram.com/advogadamichelledutra/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#582126]/10 hover:bg-[#582126] text-[#582126] hover:text-[#FAF6F2] text-xs font-semibold transition-colors"
+                    >
+                      <svg
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="1.75"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="w-3.5 h-3.5 shrink-0"
+                        aria-hidden="true"
+                      >
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                      </svg>
+                      <span>@advogadamichelledutra</span>
+                    </a>
                   </div>
                 </div>
 

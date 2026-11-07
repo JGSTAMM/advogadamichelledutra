@@ -1361,6 +1361,7 @@ export default function HomePage() {
         {/* ===================================================================
             E. HUB DE DIREITOS & PERGUNTAS FREQUENTES (MOTOR DE GEO & SEO)
             =================================================================== */}
+        <div id="guias" className="scroll-mt-20" />
         <section
           id="hub-direitos"
           aria-labelledby="hub-direitos-heading"

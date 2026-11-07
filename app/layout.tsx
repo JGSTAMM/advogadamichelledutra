@@ -1,5 +1,6 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Plus_Jakarta_Sans } from "next/font/google";
+import { ModeSwitcher } from "./components/ModeSwitcher";
 import "./globals.css";
 
 const cormorant = Cormorant_Garamond({
@@ -224,6 +225,7 @@ export default function RootLayout({
       </head>
       <body className="font-sans antialiased bg-[#FAF6F2] text-[#3A1F18] selection:bg-[#582126] selection:text-[#FAF6F2]">
         {children}
+        <ModeSwitcher />
       </body>
     </html>
   );

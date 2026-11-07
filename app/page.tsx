@@ -509,12 +509,6 @@ export default function HomePage() {
             className="hidden lg:flex items-center gap-7 text-sm font-medium text-[#3A1F18]/90"
           >
             <a
-              href="#acesso-rapido"
-              className="hover:text-[#582126] transition-colors py-2"
-            >
-              Acesso Rápido
-            </a>
-            <a
               href="#areas-de-atuacao"
               className="hover:text-[#582126] transition-colors py-2"
             >
@@ -567,8 +561,8 @@ export default function HomePage() {
           />
 
           <div className="mx-auto max-w-6xl px-4">
-            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-start">
-              {/* Coluna Esquerda: Proposta de Valor + CTAs + Modo Hub Bio-Link */}
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+              {/* Coluna Esquerda: Proposta de Valor Institucional */}
               <div className="lg:col-span-7 flex flex-col items-start">
                 {/* Badge de Prova Social + Atendimento Nacional */}
                 <div className="flex flex-wrap items-center gap-2.5 mb-5">
@@ -629,7 +623,7 @@ export default function HomePage() {
                 </p>
 
                 {/* Linha Divisória Fina com Pontos de Separação (Assinatura Visual do Feed) */}
-                <div className="w-full py-3 mb-6 border-y border-[#C88A76]/40 flex flex-wrap items-center justify-between gap-2 text-xs sm:text-sm font-medium text-[#3A1F18]/85">
+                <div className="w-full py-3.5 mb-7 border-y border-[#C88A76]/40 flex flex-wrap items-center justify-between gap-2 text-xs sm:text-sm font-medium text-[#3A1F18]/85">
                   <div className="flex items-center flex-wrap gap-x-2.5 gap-y-1">
                     <span>Valores</span>
                     <span className="text-[#C88A76]" aria-hidden="true">
@@ -652,14 +646,14 @@ export default function HomePage() {
                   </span>
                 </div>
 
-                {/* CTAs Principais */}
-                <div className="w-full flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-8">
+                {/* CTAs Principais da Landing Page */}
+                <div className="w-full flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 mb-7">
                   {/* 1. Botão Primário (Efeito Shimmer) */}
                   <a
                     href={WHATSAPP_LINKS.geral}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="btn-shimmer min-h-[54px] px-6 py-3.5 rounded-2xl bg-[#582126] hover:bg-[#41161A] text-[#FAF6F2] font-semibold text-sm sm:text-base flex items-center justify-center gap-3 shadow-md shadow-[#582126]/20 border border-[#C5A059]/45"
+                    className="btn-shimmer min-h-[54px] px-7 py-3.5 rounded-2xl bg-[#582126] hover:bg-[#41161A] text-[#FAF6F2] font-semibold text-sm sm:text-base flex items-center justify-center gap-3 shadow-md shadow-[#582126]/20 border border-[#C5A059]/45"
                   >
                     <MessageCircle
                       className="w-5 h-5 text-[#E2C68D] shrink-0"
@@ -672,115 +666,44 @@ export default function HomePage() {
                     />
                   </a>
 
-                  {/* 2. Botão Secundário (Modo Hub para visitantes do Instagram) */}
+                  {/* 2. Botão Secundário Institucional */}
                   <a
-                    href="#acesso-rapido"
-                    className="min-h-[54px] px-5 py-3.5 rounded-2xl bg-[#F3ECE4] hover:bg-[#E5D9CD]/75 text-[#3A1F18] font-medium text-xs sm:text-sm flex items-center justify-center gap-2.5 border border-[#C88A76]/50 transition-colors text-center"
+                    href="#areas-de-atuacao"
+                    className="min-h-[54px] px-6 py-3.5 rounded-2xl bg-[#F3ECE4] hover:bg-[#E5D9CD]/75 text-[#3A1F18] font-semibold text-xs sm:text-sm flex items-center justify-center gap-2.5 border border-[#C88A76]/50 transition-colors text-center"
                   >
-                    <Sparkles
+                    <Scale
                       className="w-4 h-4 text-[#582126] shrink-0"
-                      strokeWidth={1.5}
+                      strokeWidth={1.6}
                     />
-                    <span>
-                      Acesso Rápido: Avaliar Rescisão / Direitos da Gestante / Inventários
-                    </span>
+                    <span>Conhecer Áreas de Atuação</span>
                   </a>
                 </div>
 
-                {/* MODO HUB BIO-LINK INTEGRADO (Substituto Premium de Linktree para o Tráfego do Instagram) */}
-                <div
-                  id="acesso-rapido"
-                  className="w-full rounded-3xl bg-[#F3ECE4]/90 border border-[#C88A76]/45 p-4 sm:p-5 shadow-xs scroll-mt-24"
-                >
-                  <div className="flex items-center justify-between gap-2 mb-3.5 pb-2.5 border-b border-[#C88A76]/35">
-                    <div className="flex items-center gap-2">
-                      <span className="h-2 w-2 rounded-full bg-[#582126]" />
-                      <h2 className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.2em] text-[#3A1F18]">
-                        Central de Acesso Rápido • Bio-Link
-                      </h2>
-                    </div>
-                    <span className="text-[11px] text-[#582126] font-medium">
-                      Toque na sua necessidade ↓
-                    </span>
+                {/* Destaques Institucionais Rápidos */}
+                <div className="w-full grid grid-cols-3 gap-3 pt-2">
+                  <div className="p-3 rounded-2xl bg-[#F3ECE4]/75 border border-[#C88A76]/35">
+                    <p className="font-serif text-xl sm:text-2xl font-bold text-[#582126]">
+                      100%
+                    </p>
+                    <p className="text-[11px] text-[#3A1F18]/85 leading-snug">
+                      Atendimento Digital em todo o Brasil
+                    </p>
                   </div>
-
-                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
-                    {QUICK_HUB_LINKS.map((item) => {
-                      const IconComponent = item.icon;
-                      return (
-                        <a
-                          key={item.id}
-                          href={item.href}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className={`group min-h-[60px] p-3.5 rounded-2xl flex items-center justify-between gap-3 transition-all border ${
-                            item.highlight
-                              ? "bg-[#582126] text-[#FAF6F2] border-[#C5A059]/50 shadow-xs hover:bg-[#41161A]"
-                              : "bg-[#FAF6F2] text-[#3A1F18] border-[#C88A76]/40 hover:border-[#582126]/60 hover:bg-white"
-                          }`}
-                        >
-                          <div className="flex items-center gap-3 min-w-0">
-                            <div
-                              className={`w-10 h-10 rounded-xl flex items-center justify-center shrink-0 border ${
-                                item.highlight
-                                  ? "bg-[#FAF6F2]/10 border-[#C5A059]/40 text-[#E2C68D]"
-                                  : "bg-[#F3ECE4] border-[#C88A76]/35 text-[#582126]"
-                              }`}
-                            >
-                              <IconComponent className="w-5 h-5" strokeWidth={1.5} />
-                            </div>
-                            <div className="min-w-0">
-                              <span
-                                className={`block text-[10px] font-semibold uppercase tracking-[0.18em] ${
-                                  item.highlight
-                                    ? "text-[#DFB4A4]"
-                                    : "text-[#582126]"
-                                }`}
-                              >
-                                {item.category}
-                              </span>
-                              <span className="block text-xs sm:text-sm font-semibold leading-snug truncate">
-                                {item.title}
-                              </span>
-                              <span
-                                className={`block text-[11px] truncate ${
-                                  item.highlight
-                                    ? "text-[#FAF6F2]/80"
-                                    : "text-[#3A1F18]/75"
-                                }`}
-                              >
-                                {item.subtitle}
-                              </span>
-                            </div>
-                          </div>
-                          <ArrowUpRight
-                            className={`w-4 h-4 shrink-0 transition-transform group-hover:translate-x-0.5 group-hover:-translate-y-0.5 ${
-                              item.highlight ? "text-[#E2C68D]" : "text-[#582126]"
-                            }`}
-                            strokeWidth={1.75}
-                          />
-                        </a>
-                      );
-                    })}
+                  <div className="p-3 rounded-2xl bg-[#F3ECE4]/75 border border-[#C88A76]/35">
+                    <p className="font-serif text-xl sm:text-2xl font-bold text-[#582126]">
+                      5,0 ★
+                    </p>
+                    <p className="text-[11px] text-[#3A1F18]/85 leading-snug">
+                      Nota Máxima no Google Reviews
+                    </p>
                   </div>
-
-                  {/* Atalho interno para os Guias de Direitos na própria página */}
-                  <div className="mt-3 pt-2.5 border-t border-[#C88A76]/30 flex flex-wrap items-center justify-between gap-2 text-xs">
-                    <a
-                      href="#hub-direitos"
-                      className="inline-flex items-center gap-1.5 font-semibold text-[#582126] hover:underline py-1"
-                    >
-                      <FileCheck2 className="w-3.5 h-3.5" strokeWidth={1.5} />
-                      <span>
-                        Ler Guias Rápidos: Rescisão, Gravidez, Horas Extras e Férias
-                      </span>
-                    </a>
-                    <a
-                      href="#areas-de-atuacao"
-                      className="text-[#3A1F18]/75 hover:text-[#3A1F18] font-medium py-1"
-                    >
-                      Ver especialidades detalhadas →
-                    </a>
+                  <div className="p-3 rounded-2xl bg-[#F3ECE4]/75 border border-[#C88A76]/35">
+                    <p className="font-serif text-xl sm:text-2xl font-bold text-[#582126]">
+                      4 Áreas
+                    </p>
+                    <p className="text-[11px] text-[#3A1F18]/85 leading-snug">
+                      Trabalho, Gestante, Família e FIES
+                    </p>
                   </div>
                 </div>
               </div>
@@ -1565,10 +1488,10 @@ export default function HomePage() {
               <ul className="space-y-2 text-[#F3ECE4]/80">
                 <li>
                   <a
-                    href="#acesso-rapido"
+                    href="/bio"
                     className="hover:text-white transition-colors"
                   >
-                    Central Bio-Link (Acesso Rápido)
+                    Hub Bio-Link do Instagram (/bio)
                   </a>
                 </li>
                 <li>

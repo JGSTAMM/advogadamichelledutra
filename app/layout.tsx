@@ -224,8 +224,8 @@ export default function RootLayout({
         />
       </head>
       <body className="font-sans antialiased bg-[#FAF6F2] text-[#3A1F18] selection:bg-[#582126] selection:text-[#FAF6F2]">
-        {children}
         <ModeSwitcher />
+        {children}
       </body>
     </html>
   );

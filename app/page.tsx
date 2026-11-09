@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import {
   Scale,
   Briefcase,
@@ -322,6 +323,7 @@ const QUICK_HUB_LINKS = [
 const FAQ_ITEMS = [
   {
     id: "faq-rescisao",
+    blogSlug: "o-que-conferir-na-rescisao-trabalhista",
     category: "DIREITO DO TRABALHO",
     question: "O contrato terminou. O que preciso conferir na minha rescisão?",
     directAnswer:
@@ -350,6 +352,7 @@ const FAQ_ITEMS = [
   },
   {
     id: "faq-gestante-estabilidade",
+    blogSlug: "estabilidade-da-gestante-ate-quando-vai",
     category: "DIREITOS DA GESTANTE",
     question: "Estou grávida. Posso ser demitida? Até quando vai a estabilidade?",
     directAnswer:
@@ -374,6 +377,7 @@ const FAQ_ITEMS = [
   },
   {
     id: "faq-gravidez-apos-demissao",
+    blogSlug: "descobri-a-gravidez-apos-a-demissao-direitos",
     category: "DIREITOS DA GESTANTE",
     question: "Descobri a gravidez após a demissão. Perdi o direito à estabilidade?",
     directAnswer:
@@ -398,6 +402,7 @@ const FAQ_ITEMS = [
   },
   {
     id: "faq-horas-extras",
+    blogSlug: "horas-extras-o-que-conferir-ponto-contracheque",
     category: "DIREITO DO TRABALHO",
     question: "Horas extras: o que conferir no registro de ponto e contracheque?",
     directAnswer:
@@ -422,6 +427,7 @@ const FAQ_ITEMS = [
   },
   {
     id: "faq-ferias",
+    blogSlug: "ferias-regras-prazo-pagamento-divisao",
     category: "DIREITO DO TRABALHO",
     question: "Quais são as regras de prazo, pagamento e divisão das férias?",
     directAnswer:
@@ -526,6 +532,12 @@ export default function HomePage() {
             >
               Guias de Direitos & FAQ
             </a>
+            <Link
+              href="/blog"
+              className="hover:text-[#582126] transition-colors py-2 font-semibold text-[#582126]"
+            >
+              Blog
+            </Link>
           </nav>
 
           {/* Quick WhatsApp CTA */}
@@ -1377,10 +1389,13 @@ export default function HomePage() {
                       </dl>
 
                       <div className="flex flex-wrap items-center justify-between gap-3 pt-2">
-                        <span className="text-xs text-[#3A1F18]/75 italic">
-                          Cada caso possui particularidades que exigem análise
-                          documental individualizada.
-                        </span>
+                        <Link
+                          href={`/blog/${faq.blogSlug}`}
+                          className="text-xs font-semibold text-[#582126] hover:underline inline-flex items-center gap-1.5 py-1"
+                        >
+                          <BookOpen className="w-3.5 h-3.5" strokeWidth={1.6} />
+                          <span>Ler artigo completo no Blog →</span>
+                        </Link>
                         <a
                           href={faq.ctaHref}
                           target="_blank"
@@ -1398,6 +1413,22 @@ export default function HomePage() {
                   </details>
                 </article>
               ))}
+            </div>
+
+            {/* Chamada Direta para o Blog Jurídico Completo */}
+            <div className="mt-8 pt-6 border-t border-[#C88A76]/35 flex flex-col sm:flex-row items-center justify-between gap-4">
+              <p className="text-xs sm:text-sm text-[#3A1F18]/85">
+                Quer aprofundar a leitura com checklists completos de documentos e
+                prazos?
+              </p>
+              <Link
+                href="/blog"
+                className="min-h-[48px] px-5 py-2.5 rounded-xl bg-[#F3ECE4] hover:bg-[#582126] text-[#582126] hover:text-[#FAF6F2] border border-[#C88A76]/55 text-xs sm:text-sm font-semibold inline-flex items-center gap-2 transition-colors shrink-0"
+              >
+                <BookOpen className="w-4 h-4" strokeWidth={1.6} />
+                <span>Acessar Blog Jurídico Completo</span>
+                <ArrowUpRight className="w-4 h-4" />
+              </Link>
             </div>
           </div>
         </section>
@@ -1486,6 +1517,14 @@ export default function HomePage() {
                 Navegação
               </p>
               <ul className="space-y-2 text-[#F3ECE4]/80">
+                <li>
+                  <Link
+                    href="/blog"
+                    className="hover:text-white transition-colors font-semibold text-[#E2C68D]"
+                  >
+                    Blog Jurídico & Artigos (/blog)
+                  </Link>
+                </li>
                 <li>
                   <a
                     href="/bio"

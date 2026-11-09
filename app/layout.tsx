@@ -18,7 +18,8 @@ const jakarta = Plus_Jakarta_Sans({
   variable: "--font-jakarta",
 });
 
-const SITE_URL = "https://advogadamichelledutra.com.br";
+export const SITE_URL =
+  process.env.NEXT_PUBLIC_SITE_URL || "https://advogadamichelledutra.vercel.app";
 
 export const viewport: Viewport = {
   width: "device-width",
@@ -30,12 +31,11 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
   title: {
-    default:
-      "Dra. Michelle Dutra | Advogada (OAB/RS 136.947) • Trabalhista, Gestantes, Inventários e FIES",
-    template: "%s | Dra. Michelle Dutra • Advogada",
+    default: "Dra. Michelle Dutra | Advogada (OAB/RS 136.947) Online",
+    template: "%s | Dra. Michelle Dutra",
   },
   description:
-    "Advocacia com estratégia, clareza e propósito. Soluções jurídicas seguras e personalizadas em Direito do Trabalho, Direitos da Gestante, Família e Sucessões (Inventários) e FIES. Atendimento on-line humanizado em todo o Brasil.",
+    "Advocacia trabalhista, direitos da gestante, inventários e FIES. Atendimento on-line em todo o Brasil com a Dra. Michelle Dutra (OAB/RS 136.947).",
   keywords: [
     "Dra. Michelle Dutra",
     "Michelle Dutra Advogada",
@@ -50,20 +50,25 @@ export const metadata: Metadata = {
     "Advogada Especialista em FIES",
     "Advogada Torres RS",
   ],
-  authors: [{ name: "Dra. Michelle Dutra", url: "https://www.instagram.com/advogadamichelledutra/" }],
+  authors: [
+    {
+      name: "Dra. Michelle Dutra",
+      url: "https://www.instagram.com/advogadamichelledutra/",
+    },
+  ],
   creator: "Dra. Michelle Dutra | OAB/RS 136.947",
   publisher: "Dra. Michelle Dutra Advocacia",
   alternates: {
-    canonical: "/",
+    canonical: `${SITE_URL}/`,
   },
   openGraph: {
     type: "website",
     locale: "pt_BR",
-    url: SITE_URL,
+    url: `${SITE_URL}/`,
     siteName: "Dra. Michelle Dutra | Advocacia",
-    title: "Dra. Michelle Dutra | Advogada (OAB/RS 136.947) — Estratégia, Clareza e Propósito",
+    title: "Dra. Michelle Dutra | Advogada (OAB/RS 136.947) Online",
     description:
-      "Direito do Trabalho, Direitos da Gestante, Família e Sucessões (Inventários) e FIES. Avaliação 5 estrelas no Google e atendimento on-line em todo o Brasil.",
+      "Advocacia trabalhista, direitos da gestante, inventários e FIES. Atendimento on-line em todo o Brasil com a Dra. Michelle Dutra (OAB/RS 136.947).",
     images: [
       {
         url: "/images/dra-michelle-apresentacao.png",
@@ -75,9 +80,9 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Dra. Michelle Dutra | Advogada (OAB/RS 136.947)",
+    title: "Dra. Michelle Dutra | Advogada (OAB/RS 136.947) Online",
     description:
-      "Soluções jurídicas seguras, estratégicas e personalizadas em Direito do Trabalho, Direitos da Gestante, Inventários e FIES. Atendimento on-line em todo o Brasil.",
+      "Advocacia trabalhista, direitos da gestante, inventários e FIES. Atendimento on-line em todo o Brasil com a Dra. Michelle Dutra (OAB/RS 136.947).",
     images: ["/images/dra-michelle-apresentacao.png"],
   },
   robots: {
@@ -93,17 +98,21 @@ export const metadata: Metadata = {
   },
 };
 
-const legalServiceJsonLd = {
+const organizationAndLegalServiceJsonLd = {
   "@context": "https://schema.org",
-  "@type": ["LegalService", "Attorney"],
-  "@id": `${SITE_URL}/#attorney`,
-  name: "Dra. Michelle Dutra",
-  alternateName: "Michelle Dutra | Advogada (OAB/RS 136.947)",
+  "@type": ["Organization", "LegalService", "Attorney"],
+  "@id": `${SITE_URL}/#organization`,
+  name: "Dra. Michelle Dutra | Advocacia",
+  legalName: "Michelle Dutra Advocacia",
+  alternateName: "Dra. Michelle Dutra — Advogada (OAB/RS 136.947)",
   description:
     "Advocacia com estratégia, clareza e propósito. Soluções jurídicas seguras, estratégicas e personalizadas em Direito do Trabalho, Direitos da Gestante, Família e Sucessões e FIES. Atendimento on-line humanizado para todo o Brasil.",
-  url: SITE_URL,
+  url: `${SITE_URL}/`,
   image: `${SITE_URL}/images/dra-michelle-dutra.png`,
-  logo: `${SITE_URL}/images/brasao-michelle-dutra.png`,
+  logo: {
+    "@type": "ImageObject",
+    url: `${SITE_URL}/images/brasao-michelle-dutra.png`,
+  },
   telephone: "+55-51-99604-9104",
   priceRange: "$$",
   identifier: {
@@ -152,6 +161,28 @@ const legalServiceJsonLd = {
     alternateName: "FDA",
   },
   sameAs: ["https://www.instagram.com/advogadamichelledutra/"],
+};
+
+const webSiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${SITE_URL}/#website`,
+  url: `${SITE_URL}/`,
+  name: "Dra. Michelle Dutra | Advogada (OAB/RS 136.947)",
+  description:
+    "Advocacia trabalhista, direitos da gestante, inventários e FIES. Atendimento on-line em todo o Brasil com a Dra. Michelle Dutra (OAB/RS 136.947).",
+  inLanguage: "pt-BR",
+  publisher: {
+    "@id": `${SITE_URL}/#organization`,
+  },
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: `${SITE_URL}/blog?q={search_term_string}`,
+    },
+    "query-input": "required name=search_term_string",
+  },
 };
 
 const faqPageJsonLd = {
@@ -213,7 +244,16 @@ export default function RootLayout({
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
-            __html: JSON.stringify(legalServiceJsonLd).replace(/</g, "\\u003c"),
+            __html: JSON.stringify(organizationAndLegalServiceJsonLd).replace(
+              /</g,
+              "\\u003c"
+            ),
+          }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(webSiteJsonLd).replace(/</g, "\\u003c"),
           }}
         />
         <script
@@ -230,4 +270,3 @@ export default function RootLayout({
     </html>
   );
 }
-

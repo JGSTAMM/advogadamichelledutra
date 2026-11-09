@@ -148,6 +148,7 @@ const organizationAndLegalServiceJsonLd = {
     worstRating: "1",
     ratingCount: "17",
     reviewCount: "17",
+    url: "https://www.google.com/search?q=advogadamichelledutra&ie=UTF-8#lrd=0x9522697562266af9:0xcaf73222c4ba7c87,1,,,,",
   },
   knowsAbout: [
     "Direito do Trabalho",
@@ -163,7 +164,10 @@ const organizationAndLegalServiceJsonLd = {
     name: "Faculdade Dom Alberto",
     alternateName: "FDA",
   },
-  sameAs: ["https://www.instagram.com/advogadamichelledutra/"],
+  sameAs: [
+    "https://www.instagram.com/advogadamichelledutra/",
+    "https://www.google.com/search?q=advogadamichelledutra&ie=UTF-8#lrd=0x9522697562266af9:0xcaf73222c4ba7c87,1,,,,",
+  ],
 };
 
 const webSiteJsonLd = {

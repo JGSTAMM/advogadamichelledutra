@@ -23,6 +23,9 @@ import {
 
 const WHATSAPP_NUMBER = "5551996049104";
 
+const GOOGLE_REVIEWS_URL =
+  "https://www.google.com/search?q=advogadamichelledutra&ie=UTF-8#lrd=0x9522697562266af9:0xcaf73222c4ba7c87,1,,,,";
+
 function getWhatsAppUrl(message: string): string {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
@@ -578,7 +581,13 @@ export default function HomePage() {
               <div className="lg:col-span-7 flex flex-col items-start">
                 {/* Badge de Prova Social + Atendimento Nacional */}
                 <div className="flex flex-wrap items-center gap-2.5 mb-5">
-                  <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F3ECE4] border border-[#C5A059]/45 text-xs font-semibold text-[#3A1F18] shadow-2xs">
+                  <a
+                    href={GOOGLE_REVIEWS_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Ver as 17 avaliações 5 estrelas da Dra. Michelle Dutra no Google"
+                    className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-[#F3ECE4] hover:bg-white border border-[#C5A059]/45 hover:border-[#582126] text-xs font-semibold text-[#3A1F18] shadow-2xs transition-all cursor-pointer group"
+                  >
                     <span className="tracking-tighter text-amber-500" aria-hidden="true">
                       ⭐⭐⭐⭐⭐
                     </span>
@@ -586,7 +595,8 @@ export default function HomePage() {
                     <span className="text-[#582126]/75 font-normal hidden xs:inline">
                       (17 avaliações)
                     </span>
-                  </div>
+                    <ArrowUpRight className="w-3.5 h-3.5 text-[#C5A059] group-hover:text-[#582126] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </a>
 
                   <span className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-[#582126]/8 border border-[#582126]/20 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#582126]">
                     🇧🇷 Todo o Brasil
@@ -701,14 +711,23 @@ export default function HomePage() {
                       Atendimento Digital em todo o Brasil
                     </p>
                   </div>
-                  <div className="p-3 rounded-2xl bg-[#F3ECE4]/75 border border-[#C88A76]/35">
-                    <p className="font-serif text-xl sm:text-2xl font-bold text-[#582126]">
-                      5,0 ★
-                    </p>
-                    <p className="text-[11px] text-[#3A1F18]/85 leading-snug">
+                  <a
+                    href={GOOGLE_REVIEWS_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Conferir 17 avaliações com nota 5,0 no Google Reviews"
+                    className="p-3 rounded-2xl bg-[#F3ECE4]/75 hover:bg-white border border-[#C88A76]/35 hover:border-[#582126] transition-all cursor-pointer group flex flex-col justify-between"
+                  >
+                    <div className="flex items-center justify-between">
+                      <p className="font-serif text-xl sm:text-2xl font-bold text-[#582126]">
+                        5,0 ★
+                      </p>
+                      <ArrowUpRight className="w-3.5 h-3.5 text-[#C5A059] group-hover:text-[#582126] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                    </div>
+                    <p className="text-[11px] text-[#3A1F18]/85 group-hover:text-[#1A1615] leading-snug">
                       Nota Máxima no Google Reviews
                     </p>
-                  </div>
+                  </a>
                   <div className="p-3 rounded-2xl bg-[#F3ECE4]/75 border border-[#C88A76]/35">
                     <p className="font-serif text-xl sm:text-2xl font-bold text-[#582126]">
                       4 Áreas
@@ -1268,16 +1287,25 @@ export default function HomePage() {
 
                 {/* CTA da Seção Sobre */}
                 <div className="pt-5 border-t border-[#C88A76]/40 flex flex-wrap items-center justify-between gap-4">
-                  <div className="flex items-center gap-2 text-xs sm:text-sm text-[#3A1F18]">
+                  <a
+                    href={GOOGLE_REVIEWS_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    title="Ver depoimentos e avaliações no Google"
+                    className="flex items-center gap-2 text-xs sm:text-sm text-[#3A1F18] hover:text-[#582126] transition-colors group cursor-pointer"
+                  >
                     <Star
-                      className="w-4 h-4 text-amber-500 fill-amber-500"
+                      className="w-4 h-4 text-amber-500 fill-amber-500 group-hover:scale-110 transition-transform"
                       aria-hidden="true"
                     />
                     <span>
-                      <strong>Nota 5,0 no Google</strong> • Atendimento próximo e
-                      transparente
+                      <strong className="underline decoration-[#C5A059]/60 underline-offset-2">
+                        Nota 5,0 no Google
+                      </strong>{" "}
+                      • Atendimento próximo e transparente
                     </span>
-                  </div>
+                    <ArrowUpRight className="w-3.5 h-3.5 text-[#C5A059] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                  </a>
                   <a
                     href={WHATSAPP_LINKS.geral}
                     target="_blank"

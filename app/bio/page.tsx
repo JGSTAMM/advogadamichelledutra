@@ -23,6 +23,9 @@ export const metadata: Metadata = {
 
 const WHATSAPP_NUMBER = "5551996049104";
 
+const GOOGLE_REVIEWS_URL =
+  "https://www.google.com/search?q=advogadamichelledutra&ie=UTF-8#lrd=0x9522697562266af9:0xcaf73222c4ba7c87,1,,,,";
+
 function getWhatsAppUrl(message: string): string {
   return `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`;
 }
@@ -180,9 +183,16 @@ export default function BioLinkPage() {
 
             {/* Badges em Linha */}
             <div className="flex flex-wrap items-center justify-center gap-2 mb-3.5">
-              <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FAF6F2]/8 border border-[#C5A059]/40 text-[11px] font-medium text-[#FAF6F2]">
+              <a
+                href={GOOGLE_REVIEWS_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                title="Ver as 17 avaliações 5 estrelas no Google Reviews"
+                className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#FAF6F2]/8 hover:bg-[#FAF6F2]/18 border border-[#C5A059]/40 hover:border-[#C5A059] text-[11px] font-medium text-[#FAF6F2] transition-all cursor-pointer group"
+              >
                 <span>⭐ 5,0 no Google (17 avaliações)</span>
-              </span>
+                <ArrowUpRight className="w-3 h-3 text-[#C5A059] group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+              </a>
               <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#582126]/60 border border-[#C5A059]/35 text-[11px] font-medium text-[#FAF6F2]">
                 <span>🇧🇷 Atendimento em todo o Brasil</span>
               </span>

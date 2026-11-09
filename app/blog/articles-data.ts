@@ -31,7 +31,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     metaTitle: "O que conferir na Rescisão Trabalhista | Dra. Michelle",
     metaDescription:
       "Saiba o que conferir na rescisão trabalhista: valores, documentos, FGTS e o prazo legal de 10 dias para pagamento. Guia da Dra. Michelle Dutra.",
-    publishedAt: "2026-09-30",
+    publishedAt: "2026-10-18",
     readingTime: "4 min de leitura",
     pillars: "Valores • Documentos • Prazos",
     excerpt:
@@ -95,7 +95,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     metaTitle: "Estabilidade da Gestante: Até Quando Vai? | Dra. Michelle",
     metaDescription:
       "A gestante tem proteção contra demissão sem justa causa desde a confirmação da gravidez até 5 meses após o parto. Entenda seus direitos na gestação.",
-    publishedAt: "2026-09-17",
+    publishedAt: "2026-10-21",
     readingTime: "4 min de leitura",
     pillars: "Estabilidade • Licença-Maternidade • Proteção Legal",
     excerpt:
@@ -151,7 +151,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     metaTitle: "Descobri a Gravidez Após a Demissão: Direitos | Dra. Michelle",
     metaDescription:
       "O teste deu positivo depois da demissão? Você não perde o direito à estabilidade se a concepção existia no contrato ou aviso-prévio. Saiba o que fazer.",
-    publishedAt: "2026-09-22",
+    publishedAt: "2026-10-24",
     readingTime: "4 min de leitura",
     pillars: "Exames • Aviso-Prévio Indenizado • Provas Documentais",
     excerpt:
@@ -207,7 +207,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     metaTitle: "Horas Extras: O Que Conferir no Ponto | Dra. Michelle Dutra",
     metaDescription:
       "Seu expediente termina, mas o trabalho continua? Saiba conferir cartão de ponto, adicional mínimo de 50% no contracheque e regras do banco de horas.",
-    publishedAt: "2026-09-24",
+    publishedAt: "2026-10-27",
     readingTime: "4 min de leitura",
     pillars: "Jornada • Registro de Ponto • Banco de Horas",
     excerpt:
@@ -256,7 +256,7 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     metaTitle: "Regras de Férias: Prazo, Pagamento e Divisão | Dra. Michelle",
     metaDescription:
       "Conheça as regras de férias na CLT: período aquisitivo, pagamento até 2 dias antes com 1/3 constitucional e divisão em até 3 períodos. Veja seus direitos.",
-    publishedAt: "2026-09-28",
+    publishedAt: "2026-10-30",
     readingTime: "4 min de leitura",
     pillars: "Prazo • Pagamento + 1/3 • Fracionamento",
     excerpt:
@@ -297,6 +297,290 @@ export const BLOG_ARTICLES: BlogArticle[] = [
     ],
     whatsappMessage:
       "Olá, Dra. Michelle! Li seu artigo sobre as regras de Férias no blog e gostaria de tirar uma dúvida sobre o meu contrato.",
+  },
+  {
+    slug: "salario-por-fora-reflexos-verbas-rescisorias",
+    category: "DIREITO DO TRABALHO",
+    title: "Salário pago por fora: quais os reflexos nas verbas rescisórias e no FGTS?",
+    shortTitle: "Salário pago por fora: reflexos e direitos",
+    metaTitle: "Salário Pago Por Fora: Seus Direitos | Dra. Michelle Dutra",
+    metaDescription:
+      "Recebia parte do salário por fora em espécie ou Pix? Entenda como integrar esses valores no 13º, férias, FGTS e rescisão. Dra. Michelle Dutra.",
+    publishedAt: "2026-11-02",
+    readingTime: "4 min de leitura",
+    pillars: "Salário Oficioso • Integração • Provas Documentais",
+    excerpt:
+      "Receber parte do salário em dinheiro vivo ou transferências paralelas prejudica aposentadoria, FGTS, férias e rescisão. Entenda como comprovar e reaver a diferença.",
+    directAnswer:
+      "O pagamento de salário 'por fora' (sem constar no contracheque) é prática ilícita que prejudica o trabalhador em todas as verbas: férias com 1/3, 13º salário, depósitos do FGTS, multa de 40%, horas extras e até benefícios previdenciários. É possível requerer judicialmente o reconhecimento e a integração dessa remuneração para cobrar todas as diferenças não pagas.",
+    sections: [
+      {
+        heading: "Como o salário por fora prejudica o trabalhador?",
+        paragraphs: [
+          "Quando a empresa paga um valor fixo ou comissões à margem do holerite (seja em espécie, Pix de terceiros ou bonificações disfarçadas), todos os direitos trabalhistas calculados com base no salário contratual sofrem defasagem imediata.",
+          "O empregado deixa de receber os reflexos devidos no descanso semanal remunerado (DSR), nas férias com terço constitucional, no décimo terceiro salário e na base de incidência do FGTS com a multa rescisória de 40%.",
+        ],
+      },
+      {
+        heading: "Quais provas são válidas para comprovar o pagamento oficioso?",
+        paragraphs: [
+          "Para comprovar que havia remuneração superior à declarada na CTPS, o trabalhador pode se respaldar em diversos meios de prova admitidos na Justiça do Trabalho:",
+        ],
+        bullets: [
+          "Extratos bancários que comprovem depósitos regulares via Pix, TED ou dinheiro em datas coincidentes com o pagamento salarial;",
+          "Mensagens de WhatsApp, e-mails ou anotações internas da gerência indicando metas, premiações e valores combinados;",
+          "Planilhas financeiras de controle de comissões ou produção;",
+          "Prova testemunhal de colegas de trabalho que vivenciam a mesma rotina de remuneração paralela.",
+        ],
+      },
+    ],
+    checklist: [
+      {
+        term: "Extratos bancários completos",
+        detail: "Reunir comprovantes de transferências bancárias e depósitos habituais.",
+      },
+      {
+        term: "Conversas e mensagens",
+        detail: "Salvar prints de diálogos combinando percentuais de comissão ou valores adicionais.",
+      },
+      {
+        term: "Base do FGTS",
+        detail: "Checar se o depósito mensal de 8% foi calculado apenas sobre o piso do contracheque.",
+      },
+      {
+        term: "Prazo prescricional",
+        detail: "O trabalhador pode pleitear os últimos 5 anos de contrato na Justiça do Trabalho.",
+      },
+    ],
+    whatsappMessage:
+      "Olá, Dra. Michelle! Li seu artigo sobre Salário Pago por Fora e gostaria de avaliar minhas provas e diferenças rescisórias.",
+  },
+  {
+    slug: "trabalho-sem-carteira-assinada-direitos-vinculo",
+    category: "DIREITO DO TRABALHO",
+    title: "Trabalho sem carteira assinada: como comprovar e reconhecer o vínculo de emprego",
+    shortTitle: "Trabalho sem carteira: como reconhecer o vínculo",
+    metaTitle: "Trabalho Sem Carteira Assinada: Direitos | Dra. Michelle",
+    metaDescription:
+      "Trabalhou sem registro na CTPS? Descubra como comprovar o vínculo de emprego e cobrar FGTS, 13º, férias e rescisão. Dra. Michelle Dutra.",
+    publishedAt: "2026-11-04",
+    readingTime: "5 min de leitura",
+    pillars: "Vínculo Empregatício • CLT • Provas de Subordinação",
+    excerpt:
+      "Trabalhar sem a carteira assinada priva o trabalhador de segurança social e direitos fundamentais. Saiba quais são os 4 requisitos da CLT e como formalizar a relação.",
+    directAnswer:
+      "Trabalhar sem carteira assinada não retira os seus direitos trabalhistas. Se houver pessoalidade, habitualidade, onerosidade (salário) e subordinação jurídica, a relação de emprego está plenamente configurada segundo o art. 3º da CLT. O trabalhador tem direito à anotação retroativa da CTPS e ao recebimento integral de férias, 13º salário, aviso-prévio, FGTS e seguro-desemprego.",
+    sections: [
+      {
+        heading: "Os 4 requisitos legais para caracterizar a relação de emprego",
+        paragraphs: [
+          "Para que a Justiça do Trabalho reconheça a obrigação de assinar a carteira e pagar os haveres trabalhistas, é indispensável demonstrar quatro pilares:",
+        ],
+        bullets: [
+          "Habitualidade: prestar serviços de maneira contínua, com dias ou rotinas fixas na semana;",
+          "Subordinação: cumprir ordens, regras de conduta, diretrizes e horários estabelecidos pela chefia;",
+          "Onerosidade: trabalhar mediante o pagamento de uma contraprestação financeira (salário);",
+          "Pessoalidade: o serviço deve ser executado pelo próprio trabalhador, sem que ele possa enviar outra pessoa em seu lugar.",
+        ],
+      },
+      {
+        heading: "O que a empresa é obrigada a pagar ao ser condenada?",
+        paragraphs: [
+          "Com o reconhecimento judicial do vínculo, o empregador deve assinar a Carteira de Trabalho Digital com a data de admissão real e pagar todas as verbas sonegadas durante o pacto laboral:",
+          "Isso engloba todos os depósitos mensais de FGTS com multa rescisória, décimos terceiros salários de cada ano trabalhado, férias integrais com adicional de 1/3, além de eventuais adicionais de insalubridade, periculosidade ou horas extras.",
+        ],
+      },
+    ],
+    checklist: [
+      {
+        term: "Uniforme e crachá",
+        detail: "Fotos no ambiente de trabalho ou uso de identificação visual da empresa.",
+      },
+      {
+        term: "Ordens e mensagens",
+        detail: "Áudios e mensagens de chefes determinando tarefas, horários e cobranças de serviço.",
+      },
+      {
+        term: "Registros financeiros",
+        detail: "Comprovantes de recebimento de salário transferido pela empresa ou sócios.",
+      },
+      {
+        term: "Testemunhas",
+        detail: "Clientes, fornecedores ou colegas que presenciavam a prestação diária do trabalho.",
+      },
+    ],
+    whatsappMessage:
+      "Olá, Dra. Michelle! Li seu artigo sobre Trabalho Sem Carteira Assinada e preciso de ajuda para reconhecer meu vínculo.",
+  },
+  {
+    slug: "inventario-extrajudicial-cartorio-requisitos-prazos",
+    category: "FAMÍLIA E SUCESSÕES",
+    title: "Inventário em cartório (extrajudicial): requisitos, documentos e prazos legais",
+    shortTitle: "Inventário em cartório: requisitos e prazos",
+    metaTitle: "Inventário Extrajudicial em Cartório | Dra. Michelle Dutra",
+    metaDescription:
+      "Saiba como fazer o inventário em cartório de forma rápida e segura: requisitos, ausência de litígio, partilha de bens e prazos legais do ITCMD.",
+    publishedAt: "2026-11-06",
+    readingTime: "4 min de leitura",
+    pillars: "Cartório • Escritura Pública • Agilidade na Partilha",
+    excerpt:
+      "O inventário extrajudicial permite transferir bens e regularizar herança em poucas semanas, sem necessidade de processo judicial demorado. Conheça as condições legais.",
+    directAnswer:
+      "O inventário extrajudicial é realizado diretamente no Cartório de Notas por meio de escritura pública, desde que todos os herdeiros sejam maiores e capazes, haja total concordância sobre a partilha de bens e inexista testamento válido (salvo autorização judicial prévia em alguns estados). É obrigatória a presença de advogado constituído para orientar as partes e redigir a minuta.",
+    sections: [
+      {
+        heading: "Quais são as vantagens do inventário em cartório?",
+        paragraphs: [
+          "Diferente do inventário judicial, que pode se estender por anos nos fóruns em razão da sobrecarga do Judiciário, o procedimento em cartório é notavelmente mais ágil, seguro e econômico.",
+          "Em poucas semanas após a apuração e quitação do imposto sobre herança (ITCMD), a escritura pública definitiva é lavrada, servindo de título para transferir imóveis no Registro de Imóveis, veículos no Detran e saldos em contas bancárias.",
+        ],
+      },
+      {
+        heading: "Atenção ao prazo legal de 60 dias para abertura",
+        paragraphs: [
+          "O Código de Processo Civil (art. 611) estabelece que o processo de inventário e partilha deve ser instaurado dentro de 2 (dois) meses a contar da data da abertura da sucessão (falecimento).",
+        ],
+        bullets: [
+          "O desrespeito ao prazo de 60 dias pode acarretar multa sobre o imposto estadual (ITCMD), onerando a partilha;",
+          "Mesmo que faltem documentos, a instauração tempestiva evita penalidades fiscais severas;",
+          "A assessoria jurídica especializada calcula o imposto com exatidão e planeja a forma mais eficiente de divisão do patrimônio.",
+        ],
+      },
+    ],
+    checklist: [
+      {
+        term: "Capacidade e consenso",
+        detail: "Todos os herdeiros devem ser maiores, capazes e estar de pleno acordo sobre os bens.",
+      },
+      {
+        term: "Certidão de óbito e certidões",
+        detail: "Reunir certidão de óbito, RG/CPF das partes, certidões negativas fiscais e de imóveis.",
+      },
+      {
+        term: "Prazo de 60 dias (ITCMD)",
+        detail: "Iniciar o procedimento em até 60 dias do óbito para evitar multas estaduais.",
+      },
+      {
+        term: "Advocacia obrigatória",
+        detail: "A lei exige assistência de advogado, que pode ser o mesmo para todos os herdeiros.",
+      },
+    ],
+    whatsappMessage:
+      "Olá, Dra. Michelle! Li seu artigo sobre Inventário em Cartório e gostaria de informações para regularizar a partilha da minha família.",
+  },
+  {
+    slug: "partilha-de-bens-heranca-como-evitar-conflitos",
+    category: "FAMÍLIA E SUCESSÕES",
+    title: "Partilha de bens e herança: como evitar conflitos familiares e proteger o patrimônio",
+    shortTitle: "Partilha de bens na herança: prevenção de conflitos",
+    metaTitle: "Partilha de Bens e Herança sem Conflitos | Dra. Michelle",
+    metaDescription:
+      "Planejamento sucessório, meação do cônjuge e divisão justa de bens da herança. Entenda como prevenir litígios familiares com a Dra. Michelle Dutra.",
+    publishedAt: "2026-11-07",
+    readingTime: "5 min de leitura",
+    pillars: "Sucessão • Meação do Cônjuge • Planejamento",
+    excerpt:
+      "A perda de um familiar não precisa ser acompanhada de desgastes patrimoniais. Entenda como funciona a legítima, a meação do cônjuge e os caminhos para uma partilha equilibrada.",
+    directAnswer:
+      "Para evitar conflitos na partilha de bens, o primeiro passo é distinguir com clareza o que é meação (parte do cônjuge/companheiro conforme o regime de bens) do que é herança (patrimônio deixado pelo falecido a ser dividido entre os herdeiros necessários). O planejamento sucessório e o diálogo técnico respaldado por assessoria jurídica neutra e especializada garantem segurança e preservação das relações familiares.",
+    sections: [
+      {
+        heading: "A diferença vital entre Meação e Herança",
+        paragraphs: [
+          "Uma das maiores fontes de desentendimento entre herdeiros é a incompreensão do regime matrimonial de bens:",
+          "A meação é a metade do patrimônio comum pertencente por direito próprio ao cônjuge ou companheiro sobrevivente. Ela não entra no cálculo da herança. Já a herança é a parcela dos bens deixada pelo de cujus para transmissão aos filhos, pais ou cônjuge concorrente, conforme determina a ordem de vocação hereditária do Código Civil.",
+        ],
+      },
+      {
+        heading: "Como conduzir uma divisão patrimonial pacífica?",
+        paragraphs: [
+          "Para preservar a integridade do patrimônio e evitar que bens sofram desvalorização enquanto disputas tramitam por décadas na Justiça:",
+        ],
+        bullets: [
+          "Promova avaliações imobiliárias profissionais e atualizadas de cada bem do espólio;",
+          "Compense eventuais desníveis com tornas financeiras quando um herdeiro fica com um bem indivisível;",
+          "Priorize a resolução amigável, que reduz drasticamente despesas processuais e custas judiciais;",
+          "Considere instrumentos de planejamento sucessório prévio para resguardar a vontade do titular do patrimônio.",
+        ],
+      },
+    ],
+    checklist: [
+      {
+        term: "Regime de casamento",
+        detail: "Analisar certidão de casamento e pacto antenupcial para apurar a exata meação.",
+      },
+      {
+        term: "Herdeiros necessários",
+        detail: "Respeitar a legítima (50% do patrimônio pertencente aos descendentes/ascendentes/cônjuge).",
+      },
+      {
+        term: "Avaliação equitativa",
+        detail: "Utilizar critérios técnicos de valor de mercado para todos os imóveis e ativos.",
+      },
+      {
+        term: "Acordo formalizado",
+        detail: "Redigir termo detalhado de partilha evitando futuras alegações de nulidade.",
+      },
+    ],
+    whatsappMessage:
+      "Olá, Dra. Michelle! Li seu artigo sobre Partilha de Bens e Herança e gostaria de agendar uma consulta sobre o patrimônio da minha família.",
+  },
+  {
+    slug: "contratos-fies-juros-cobrancas-indevidas-direitos",
+    category: "ASSESSORIA EM FIES",
+    title: "Contratos do FIES: como agir diante de juros abusivos, amortização e cobranças",
+    shortTitle: "Contratos do FIES: juros e cobranças indevidas",
+    metaTitle: "Assessoria Jurídica em Contratos FIES | Dra. Michelle Dutra",
+    metaDescription:
+      "Problemas na amortização, fiador, juros ou cobranças do FIES? Entenda as vias administrativas e judiciais para renegociar o financiamento estudantil.",
+    publishedAt: "2026-11-08",
+    readingTime: "4 min de leitura",
+    pillars: "Financiamento Estudantil • Amortização • Renegociação",
+    excerpt:
+      "Concluiu a faculdade e o saldo devedor do FIES se tornou impagável ou sofreu cobranças inesperadas? Conheça os mecanismos legais de renegociação e defesa do financiado.",
+    directAnswer:
+      "Estudantes e graduados vinculados ao FIES (Financiamento Estudantil) frequentemente enfrentam inconsistências no cálculo da fase de amortização, exigências desproporcionais sobre fiadores ou cobranças que extrapolam a capacidade de pagamento. A legislação federal prevê faixas de renegociação especial com abatimentos substanciais, além da possibilidade de revisão de cláusulas abusivas perante as instituições financeiras operadoras.",
+    sections: [
+      {
+        heading: "Quais são as principais controvérsias nos contratos do FIES?",
+        paragraphs: [
+          "O programa de financiamento estudantil é regido por normas e portarias específicas do FNDE e do MEC. Na prática, no entanto, muitos estudantes se deparam com entraves que comprometem seu início profissional:",
+        ],
+        bullets: [
+          "Dificuldades no cálculo e na carência da fase de amortização após a conclusão da graduação;",
+          "Negativação indevida do nome do estudante ou de seus garantidores (fiadores) no SPC/Serasa;",
+          "Inconsistências em aditamentos de renovação ou transferência de curso/instituição;",
+          "Dúvidas sobre o enquadramento em programas governamentais de desconto e anistia parcial de dívidas.",
+        ],
+      },
+      {
+        heading: "O que fazer se a parcela mensal for incompatível com sua renda?",
+        paragraphs: [
+          "Antes de incorrer em inadimplência e comprometer o histórico de crédito, é fundamental avaliar o contrato e o extrato de evolução da dívida emitido pelo banco operador (Caixa Econômica Federal ou Banco do Brasil).",
+          "A análise jurídica especializada verifica se houve anatocismo (cobrança indevida de juros sobre juros), aplicação correta dos índices contratuais e se o formando reúne os requisitos legais para readequação do plano de pagamento.",
+        ],
+      },
+    ],
+    checklist: [
+      {
+        term: "Contrato e aditamentos",
+        detail: "Reunir o contrato original assinado no banco e todos os termos de aditamento do SisFIES.",
+      },
+      {
+        term: "Extrato de evolução da dívida",
+        detail: "Solicitar junto à agência o demonstrativo detalhado de parcelas e juros cobrados.",
+      },
+      {
+        term: "Proteção aos fiadores",
+        detail: "Verificar a legalidade de exigências patrimoniais impostas aos garantidores do contrato.",
+      },
+      {
+        term: "Programas de renegociação",
+        detail: "Analisar o cabimento de descontos previstos em leis federais recentes de repactuação.",
+      },
+    ],
+    whatsappMessage:
+      "Olá, Dra. Michelle! Li seu artigo sobre Contratos do FIES e preciso de assessoria jurídica especializada para revisar meu financiamento.",
   },
 ];
 

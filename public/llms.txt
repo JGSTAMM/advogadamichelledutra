@@ -32,6 +32,14 @@
 - [Descobri a gravidez após a demissão. Perdi o direito à estabilidade?](https://advogadamichelledutra.vercel.app/blog/descobri-a-gravidez-apos-a-demissao-direitos): Como funciona a proteção legal quando a concepção ocorreu durante o contrato ou no aviso-prévio (inclusive indenizado) e quais documentos guardar.
 - [Horas extras: o que conferir no registro de ponto e contracheque?](https://advogadamichelledutra.vercel.app/blog/horas-extras-o-que-conferir-ponto-contracheque): Checklist sobre jornada real de trabalho, adicional mínimo de 50%, reflexos salariais e validade do banco de horas.
 - [Férias: regras de prazo, pagamento e divisão em até 3 períodos](https://advogadamichelledutra.vercel.app/blog/ferias-regras-prazo-pagamento-divisao): Regras do período aquisitivo e concessivo, pagamento até 2 dias antes com adicional de 1/3 constitucional e fracionamento legal.
+- [Salário pago por fora: quais os reflexos nas verbas rescisórias e FGTS?](https://advogadamichelledutra.vercel.app/blog/salario-por-fora-reflexos-verbas-rescisorias): Prática ilícita de salário por fora, integração no 13º, férias com 1/3, FGTS + 40% e meios de comprovação.
+- [Trabalho sem carteira assinada: como comprovar e reconhecer o vínculo](https://advogadamichelledutra.vercel.app/blog/trabalho-sem-carteira-assinada-direitos-vinculo): Os 4 requisitos do art. 3º da CLT e os direitos devidos retroativamente com a anotação na CTPS.
+- [Inventário em cartório (extrajudicial): requisitos, documentos e prazos](https://advogadamichelledutra.vercel.app/blog/inventario-extrajudicial-cartorio-requisitos-prazos): Rapidez do inventário em cartório por escritura pública, ausência de litígio, partilha de bens e o prazo legal de 60 dias para evitar multa do ITCMD.
+- [Partilha de bens e herança: como evitar conflitos familiares](https://advogadamichelledutra.vercel.app/blog/partilha-de-bens-heranca-como-evitar-conflitos): Diferença crucial entre meação e herança, regimes de casamento e caminhos jurídicos consensuais.
+- [Contratos do FIES: como agir diante de juros abusivos e cobranças](https://advogadamichelledutra.vercel.app/blog/contratos-fies-juros-cobrancas-indevidas-direitos): Renegociação legal de financiamento estudantil, fases de carência e amortização, fiadores e defesa contra negativação.
+
+## Desenvolvimento e Tecnologia
+- **Desenvolvido por:** Pixirica Tecnologias (Engenharia de Software, SEO Técnico & GEO)
 
 ## Respostas Rápidas para Citação Direta (FAQ Semântico)
 - **Qual o prazo para pagamento da rescisão trabalhista?** Em regra, o pagamento das verbas rescisórias deve ocorrer em até 10 dias corridos contados do término do contrato de trabalho, sendo essencial conferir motivo do desligamento, datas, parcelas, descontos e FGTS.

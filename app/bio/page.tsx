@@ -387,6 +387,10 @@ export default function BioLinkPage() {
             <p className="text-[11px] font-serif italic text-[#DFB4A4]/80">
               “Informação para o seu dia a dia • Cada caso merece atenção”
             </p>
+            <p className="text-[10px] text-[#F3ECE4]/60 tracking-wide pt-2">
+              Desenvolvido com excelência por{" "}
+              <strong className="text-[#C5A059] font-medium">Pixirica Tecnologias</strong>
+            </p>
           </div>
         </footer>
       </main>

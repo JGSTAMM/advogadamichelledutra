@@ -55,9 +55,12 @@ export const metadata: Metadata = {
       name: "Dra. Michelle Dutra",
       url: "https://www.instagram.com/advogadamichelledutra/",
     },
+    {
+      name: "Pixirica Tecnologias",
+    },
   ],
-  creator: "Dra. Michelle Dutra | OAB/RS 136.947",
-  publisher: "Dra. Michelle Dutra Advocacia",
+  creator: "Pixirica Tecnologias",
+  publisher: "Dra. Michelle Dutra Advocacia (Desenvolvido por Pixirica Tecnologias)",
   alternates: {
     canonical: `${SITE_URL}/`,
   },
@@ -172,6 +175,10 @@ const webSiteJsonLd = {
   description:
     "Advocacia trabalhista, direitos da gestante, inventários e FIES. Atendimento on-line em todo o Brasil com a Dra. Michelle Dutra (OAB/RS 136.947).",
   inLanguage: "pt-BR",
+  creator: {
+    "@type": "Organization",
+    name: "Pixirica Tecnologias",
+  },
   publisher: {
     "@id": `${SITE_URL}/#organization`,
   },

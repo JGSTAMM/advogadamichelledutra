@@ -187,6 +187,12 @@ export default function BlogIndexPage() {
             </Link>
           </div>
         </div>
+        <div className="mx-auto max-w-5xl px-4 pt-4 mt-4 border-t border-[#C5A059]/15 text-center sm:text-right">
+          <p className="text-[11px] text-[#F3ECE4]/60">
+            Desenvolvido com excelência por{" "}
+            <strong className="text-[#C5A059] font-medium">Pixirica Tecnologias</strong>
+          </p>
+        </div>
       </footer>
     </div>
   );

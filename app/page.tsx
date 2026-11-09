@@ -1629,7 +1629,20 @@ export default function HomePage() {
               aqui publicado não substitui consulta jurídica formal.
             </p>
             <p className="shrink-0 text-[#C5A059]/90">
-              © {new Date().getFullYear()} Dra. Michelle Dutra • OAB/RS 136.947
+              OAB/RS 136.947 • Torres/RS
+            </p>
+          </div>
+
+          {/* Créditos de Desenvolvimento Pixirica Tecnologias */}
+          <div className="pt-4 mt-4 border-t border-[#C5A059]/15 flex flex-col sm:flex-row items-center justify-between gap-2 text-[11px] text-[#F3ECE4]/60">
+            <p>
+              © {new Date().getFullYear()} Dra. Michelle Dutra • Todos os direitos reservados
+            </p>
+            <p className="flex items-center gap-1.5 tracking-wide">
+              <span>Desenvolvido com excelência por</span>
+              <strong className="text-[#C5A059] font-semibold">
+                Pixirica Tecnologias
+              </strong>
             </p>
           </div>
         </div>

@@ -264,6 +264,32 @@ export default async function BlogArticlePage({
           </div>
         </article>
       </main>
+
+      {/* Footer Compacto do Artigo */}
+      <footer className="bg-[#1A1615] text-[#FAF6F2] border-t border-[#C5A059]/30 py-8 mt-12">
+        <div className="mx-auto max-w-4xl px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-[#F3ECE4]/80">
+          <p>
+            © {new Date().getFullYear()} Dra. Michelle Dutra • Advogada (OAB/RS 136.947)
+          </p>
+          <div className="flex items-center gap-4">
+            <Link href="/" className="hover:text-white underline underline-offset-4">
+              Site Institucional
+            </Link>
+            <Link href="/blog" className="hover:text-white underline underline-offset-4">
+              Todos os Guias
+            </Link>
+            <Link href="/bio" className="hover:text-white underline underline-offset-4">
+              Hub Bio-Link
+            </Link>
+          </div>
+        </div>
+        <div className="mx-auto max-w-4xl px-4 pt-4 mt-4 border-t border-[#C5A059]/15 text-center sm:text-right">
+          <p className="text-[11px] text-[#F3ECE4]/60">
+            Desenvolvido com excelência por{" "}
+            <strong className="text-[#C5A059] font-medium">Pixirica Tecnologias</strong>
+          </p>
+        </div>
+      </footer>
     </div>
   );
 }
